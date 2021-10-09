@@ -1,6 +1,6 @@
 {
   "name": "simple-lru-cache",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple Least Recently Used (LRU) Cache for node.js",
   "main": "index.js",
   "scripts": {
