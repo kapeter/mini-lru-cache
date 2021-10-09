@@ -1,17 +1,17 @@
-# simple-lru-cache
+# mini-lru-cache
 
 A simple Least Recently Used (LRU) Cache for node.js
 
 ## Installation
 
 ```
-npm install simple-lru-cache --save
+npm install mini-lru-cache --save
 ```
 
 ## Usage
 
 ```javascript
-const cache = require('simple-lru-cache');
+const cache = require('mini-lru-cache');
 
 cache.put('name', 'bob');
 console.log(cache.get('name')); // 'bob'
