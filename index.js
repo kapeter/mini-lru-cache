@@ -32,21 +32,21 @@ class LRUCache {
    * @memberof LRUCache
    */
   size() {
-    return this._size;
+    return this._cache.size;
   }
   /**
    * @description change size
    * @return {Number} - size
    * @memberof LRUCache
    */
-  changeSize(size) {
+  changeMaxSize(size) {
     this._size = size;
   }
   /**
    * @description insert cache
    * @param {String} key - key
    * @param {Any} value - value
-   * @param {Number} time - cache time
+   * @param {Number} time - cache time，ms
    * @memberof LRUCache
    */
   put(key, value, time) {
@@ -63,6 +63,7 @@ class LRUCache {
       }, time);
     }
     this._cache.set(key, record);
+    return record;
   }
 
   /**
